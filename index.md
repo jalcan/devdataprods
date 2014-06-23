@@ -1,0 +1,110 @@
+---
+title       : Cardiovascular Disease Risk Assessment
+subtitle    : Presentation of a Shiny App
+author      : 
+job         : 
+framework   : html5slides        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+Cardiovascular Disease Risk Assessment
+======================================
+
+<br/><br/><br/><br/>
+
+Presentation pitch for a Shiny App:
+
+Risk Assessment  for Estimating Your 10-year Risk of Having a Heart Attack
+
+
+---
+
+
+Cardiovascular Disease Risk Assessment
+======================================
+
+<font size=5>
+<p>Cardiovascular disease is becoming a massive modern epidemic.</p>
+<p>Proper assesment is key to prevention and control.</p>
+
+<p>Here, I present an online tool to allow easy personal assesment of cardiovascular disease based on the <a href="http://en.wikipedia.org/wiki/Framingham_Heart_Study">Framingham Heart Study</a>
+</p>   
+</font>
+
+---
+
+Cardiovascular Disease Risk Assessment
+======================================
+<font size=5>
+
+The Framingham Heart Study is a long-term, ongoing cardiovascular study on residents of the town of Framingham, Massachusetts.  
+
+<br/>
+The study began in 1948 with 5,209 adult, and is now on its third generation of participants. Prior to it almost nothing was known about the "epidemiology of hypertensive or arteriosclerotic cardiovascular disease".
+
+<br/>
+By discovering the main risk factors associated with cardiovascular disease, this study changed forever the way we understand the disease, and  allows us to assess and <b>prevent</b> those factos.
+
+
+<br/>
+
+<div align="right">
+Source: Wikipedia, <a href="http://en.wikipedia.org/wiki/Framingham_Heart_Study">Framingham_Heart_Study</a>
+</div>
+</font>
+
+
+---
+
+Cardiovascular Disease Risk Assessment
+======================================
+
+
+<font size="4">
+Example calculation for a male, 55 years old, with a total Cholesterol of 220, HDL (High Density Lipoprotein) 50,  Systolic Blood Pressure in 160, in treatment for Hypertension and current smoker
+
+
+
+```r
+gender="m"
+age=55
+chol=220
+hdl=50
+sbp=160
+hypert=TRUE
+smoker=TRUE
+risk = cvd(gender, age,chol,hdl,sbp,hypert,smoker)
+```
+Your current 10-year Risk of Having a Heart Attack is:
+
+```
+## [1] "23%"
+```
+
+<div align="center">
+<a href="https://jalcan.shinyapps.io/cvd_app2/" >My shiny app</a>
+</div>
+Re-Check here: <a href="http://cvdrisk.nhlbi.nih.gov" >National Health Institutes (based on the same data)</a>
+</font>  
+
+---
+
+References and sources 
+======================
+<br/><br/>
+<font size="4", align="left">
+<ol>
+<b>Risk Assessment Tool for Estimating Your 10-year Risk of Having a Heart Attack. National Healt Institutes:</b>
+http://cvdrisk.nhlbi.nih.gov/calculator.asp
+</ol><ol>
+<b>The Framingham Heart Studio (wikipedia):</b>
+http://en.wikipedia.org/wiki/Framingham_Heart_Study
+</ol><ol>
+<b>The Framingham Risk Score (wikipedia):</b>
+http://en.wikipedia.org/wiki/Framingham_Risk_Score#Current_version_of_the_Framingham_Risk_Score
+  </ol>
+</font>

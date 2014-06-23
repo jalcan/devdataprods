@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Cardiovascular Disease Risk Assessment</title>
+	<meta name="description" content="Cardiovascular Disease Risk Assessment">
+	<meta name="author" content="">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />  <link rel="stylesheet" href = "assets/css/ribbons.css">
+  
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>Cardiovascular Disease Risk Assessment</h3>
+  <p><br/><br/><br/><br/></p>
+
+<p>Presentation pitch for a Shiny App:</p>
+
+<p>Risk Assessment  for Estimating Your 10-year Risk of Having a Heart Attack</p>
+
+</article>
+
+<article class="" id="slide-2" style="background:;">
+  <h3>Cardiovascular Disease Risk Assessment</h3>
+  <p><font size=5></p>
+
+<p>Cardiovascular disease is becoming a massive modern epidemic.</p>
+
+<p>Proper assesment is key to prevention and control.</p>
+
+<p>Here, I present an online tool to allow easy personal assesment of cardiovascular disease based on the <a href="http://en.wikipedia.org/wiki/Framingham_Heart_Study">Framingham Heart Study</a>
+</p>   
+
+<p></font></p>
+
+</article>
+
+<article class="" id="slide-3" style="background:;">
+  <h3>Cardiovascular Disease Risk Assessment</h3>
+  <p><font size=5></p>
+
+<p>The Framingham Heart Study is a long-term, ongoing cardiovascular study on residents of the town of Framingham, Massachusetts.  </p>
+
+<p><br/>
+The study began in 1948 with 5,209 adult, and is now on its third generation of participants. Prior to it almost nothing was known about the &quot;epidemiology of hypertensive or arteriosclerotic cardiovascular disease&quot;.</p>
+
+<p><br/>
+By discovering the main risk factors associated with cardiovascular disease, this study changed forever the way we understand the disease, and  allows us to assess and <b>prevent</b> those factos.</p>
+
+<p><br/></p>
+
+<div align="right">
+Source: Wikipedia, <a href="http://en.wikipedia.org/wiki/Framingham_Heart_Study">Framingham_Heart_Study</a>
+</div>
+
+<p></font></p>
+
+</article>
+
+<article class="" id="slide-4" style="background:;">
+  <h3>Cardiovascular Disease Risk Assessment</h3>
+  <p><font size="4">
+Example calculation for a male, 55 years old, with a total Cholesterol of 220, HDL (High Density Lipoprotein) 50,  Systolic Blood Pressure in 160, in treatment for Hypertension and current smoker</p>
+
+<pre><code class="r">gender=&quot;m&quot;
+age=55
+chol=220
+hdl=50
+sbp=160
+hypert=TRUE
+smoker=TRUE
+risk = cvd(gender, age,chol,hdl,sbp,hypert,smoker)
+</code></pre>
+
+<p>Your current 10-year Risk of Having a Heart Attack is:</p>
+
+<pre><code>## [1] &quot;23%&quot;
+</code></pre>
+
+<div align="center">
+<a href="https://jalcan.shinyapps.io/cvd_app2/" >My shiny app</a>
+</div>
+
+<p>Re-Check here: <a href="http://cvdrisk.nhlbi.nih.gov" >National Health Institutes (based on the same data)</a>
+</font>  </p>
+
+</article>
+
+<article class="" id="slide-5" style="background:;">
+  <h3>References and sources </h3>
+  <p><br/><br/>
+<font size="4", align="left"></p>
+
+<ol>
+<b>Risk Assessment Tool for Estimating Your 10-year Risk of Having a Heart Attack. National Healt Institutes:</b>
+http://cvdrisk.nhlbi.nih.gov/calculator.asp
+</ol><ol>
+<b>The Framingham Heart Studio (wikipedia):</b>
+http://en.wikipedia.org/wiki/Framingham_Heart_Study
+</ol><ol>
+<b>The Framingham Risk Score (wikipedia):</b>
+http://en.wikipedia.org/wiki/Framingham_Risk_Score#Current_version_of_the_Framingham_Risk_Score
+  </ol>
+
+<p></font></p>
+
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+	</html>
